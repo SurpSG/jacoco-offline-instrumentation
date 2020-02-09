@@ -1,4 +1,5 @@
 rootProject.name = 'jacoco-offline-instrumentation'
 include 'code-only'
 include 'code-and-tests'
+include '3rd'
 
