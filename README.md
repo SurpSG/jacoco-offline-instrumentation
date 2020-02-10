@@ -4,7 +4,7 @@ A sample project that demonstrates how to use Jacoco offline instrumentation for
 
 To generate full coverage report run:
 ```
-./gradlew clean jacocoInstrumentedJar report
+./gradlew clean report
 ```
 
 Open HTML report to observe the results
