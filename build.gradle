@@ -26,6 +26,7 @@ subprojects {
     configurations {
         jacoco
         jacocoRuntime
+        jacocoInstrumented
     }
 
     dependencies {
@@ -69,6 +70,10 @@ subprojects {
 
     test.dependsOn preprocessClassesForJacoco
     test.dependsOn jacocoInstrumentedJar
+
+    artifacts {
+        jacocoInstrumented jacocoInstrumentedJar
+    }
 }
 
 def moduleDependencies(Project project) {

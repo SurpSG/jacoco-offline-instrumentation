@@ -13,5 +13,8 @@ repositories {
 
 dependencies {
     compile project(':3rd')
+
+    testCompile project(path: ':3rd', configuration: 'jacocoInstrumented')
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
