@@ -15,8 +15,8 @@ configurations {
 }
 
 dependencies {
-    jacoco group: 'org.jacoco', name: 'org.jacoco.ant', version: '0.8.4', classifier: 'nodeps'
-    jacocoRuntime group: 'org.jacoco', name: 'org.jacoco.agent', version: '0.8.4', classifier: 'runtime'
+    jacoco group: 'org.jacoco', name: 'org.jacoco.ant', version: '0.8.7', classifier: 'nodeps'
+    jacocoRuntime group: 'org.jacoco', name: 'org.jacoco.agent', version: '0.8.7', classifier: 'runtime'
 }
 
 subprojects {
@@ -31,8 +31,8 @@ subprojects {
 
     dependencies {
         testImplementation 'junit:junit:4.12'
-        jacoco group: 'org.jacoco', name: 'org.jacoco.ant', version: '0.8.4', classifier: 'nodeps'
-        jacocoRuntime group: 'org.jacoco', name: 'org.jacoco.agent', version: '0.8.4', classifier: 'runtime'
+        jacoco group: 'org.jacoco', name: 'org.jacoco.ant', version: '0.8.7', classifier: 'nodeps'
+        jacocoRuntime group: 'org.jacoco', name: 'org.jacoco.agent', version: '0.8.7', classifier: 'runtime'
     }
 
     task preprocessClassesForJacoco(dependsOn: ['classes']) {
